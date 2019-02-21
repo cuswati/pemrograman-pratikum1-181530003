@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Pratikum 9</title>
+    </head>
+
+    <body>
+
+        <div style="text-align:center">
+            <button onclick="playPause()">Play/Pause</button>
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeSmall()">Normal</button>
+            <br><br>
+            <video id="video" width="420">
+            <source src="Pixar Vgel.mp4" type ="video/mp4">
+                Your browser does not suppor HTML5 video. 
+            </video>
+        </div>
+        <script>
+        var myvideo = document.getElementBYID("VIDEO1");
+
+        function playpAUSE() {
+            if(myVideo.paused)
+            myVideo.play();
+            elsemyVideo.paused();
+        }  
+        function makeBig(){
+            myVideo.width = 560;
+        }  
+        function makeSmall(){
+            myVideo.width = 320;
+        }
+        function makeNormal(){
+            myVideo.width = 420;
+
+        }
+        </script>
+    </body>
+</html>
